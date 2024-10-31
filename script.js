@@ -1,14 +1,14 @@
 // Array de produtos de exemplo com links de afiliados
 const products = [
     { id: 1, name: 'Prateleira 4 andares', img: 'img/organizador_4_andares.png', link: 'https://s.shopee.com.br/BCEwhUqPb', code: '0001' },
-    { id: 3, name: 'Produto 3', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto3', code: 'SKU002' },
-    { id: 4, name: 'Produto 4', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto4', code: 'SKU003' },
-    { id: 5, name: 'Produto 5', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto5', code: 'SKU004' },
-    { id: 6, name: 'Produto 6', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto6', code: 'SKU005' },
-    { id: 7, name: 'Produto 7', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto7', code: 'SKU006' },
-    { id: 8, name: 'Produto 8', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto8', code: 'SKU007' },
-    { id: 9, name: 'Produto 9', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto9', code: 'SKU008' },
-    { id: 10, name: 'Produto 10', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto10', code: 'SKU009' },
+    { id: 2, name: 'Parafusadeira/Furadeira', img: 'img/parafusadeira1.png', link: 'https://s.shopee.com.br/6KmsL8Qfms', code: '0002' },
+    { id: 3, name: 'Piscina Insuflável', img: 'img/Piscina_Insuflável.png', link: 'https://s.shopee.com.br/5AauxEpNuk', code: '0003' },
+    { id: 4, name: 'Produto 5', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto5', code: '0004' },
+    { id: 5, name: 'Produto 6', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto6', code: '0005' },
+    { id: 6, name: 'Produto 7', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto7', code: '0006' },
+    { id: 7, name: 'Produto 8', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto8', code: '0007' },
+    { id: 8, name: 'Produto 9', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto9', code: '0008' },
+    { id: 9, name: 'Produto 10', img: 'https://via.placeholder.com/150', link: 'https://exemplo.com/produto10', code: '0009' },
     // ... adicione mais produtos conforme necessário
 ];
 
