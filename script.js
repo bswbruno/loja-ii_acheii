@@ -8,9 +8,11 @@ const products = [
 ];
 
 // Função para exibir produtos
-function displayProducts() {
+function displayProducts(filteredProducts) {
     const productList = document.getElementById('productList');
-    products.forEach(product => {
+    productList.innerHTML = ''; // Limpa a lista antes de exibir os produtos
+
+    filteredProducts.forEach(product => {
         const productCard = document.createElement('div');
         productCard.className = 'product-card';
         productCard.innerHTML = `
@@ -23,5 +25,18 @@ function displayProducts() {
     });
 }
 
-// Inicializa a exibição dos produtos
-displayProducts();
+// Função de busca
+function searchProducts() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase(); // Pega o valor em minúsculas
+    const filteredProducts = products.filter(product => 
+        product.name.toLowerCase().includes(searchInput) || 
+        product.code.includes(searchInput)
+    );
+    displayProducts(filteredProducts);
+}
+
+// Inicializa a exibição dos produtos com todos eles
+displayProducts(products);
+
+// Adiciona o evento para a barra de pesquisa
+document.getElementById('searchInput').addEventListener('input', searchProducts);
