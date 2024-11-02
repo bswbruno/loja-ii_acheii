@@ -13,7 +13,6 @@ header {
 
 .header-container {
     margin-bottom: 20px;
-    
 }
 
 .header-container p {
@@ -24,7 +23,7 @@ header {
 }
 
 .logo {
-    width: 60%; /* Altere o tamanho conforme necessário */
+    width: 60%;
     background-size: cover;
     background-position: center center;
 }
@@ -89,6 +88,9 @@ main h2 {
 
 .product-card h5 {
     font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product-card p {
@@ -127,44 +129,25 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
-    
-
 }
 
 .social-icon {
-    width: 50px; /* Altere o tamanho conforme necessário */
+    width: 50px;
     height: 50px;
     margin-top: 20px;
-    
 }
 
 footer .social-icons a {
     text-decoration: none;
     font-weight: bolder;
-    
-    
 }
 
-@media screen and (max-width:480px) {
-
-   
-    
+@media screen and (max-width: 480px) {
     header {
-        background-color: #FB5631;
-        color: white;
-        text-align: center;
         padding: 0;
-        
-    }
-    
-    .header-container {
-        margin: 0;
-        
     }
     
     .header-container p {
-        max-width: 1200px;
-        margin: 0 auto;
         padding: 0;
         font-size: 14px;
     }
@@ -174,71 +157,38 @@ footer .social-icons a {
     }
 
     .search-input {
-        width: 100%;
-        padding: 0px;
+        width: 90%;
         margin-top: 20px;
     }
     
     .logo {
-        width: 100%; /* Altere o tamanho conforme necessário */
-        background-size: cover;
-        background-position: center center;
+        width: 100%;
     }
-    
-    .search-input {
-        width: 80%;
-        padding: 10px;
-        margin-top: 10px;
-    }
-    
-   
     
     main h2 {
-        text-align: center;
         padding: 10px;
         font-size: 20px;
     }
     
     .product-list {
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        margin: 10px;
+        justify-content: space-around;
     }
     
     .product-card {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        width: 100%;
-        margin: 10px;
+        width: 35%; /* Ajuste para manter dois cards lado a lado */
+        margin: 5px;
         padding: 10px;
-        text-align: center;
-        transition: transform 0.2s;
-    }
-    
-    .product-card:hover {
-        transform: scale(1.02);
-        box-shadow: 1px 1px 15px 1px black;
-    }
-    
-    .product-card img {
-        max-width: 100%;
-        height: auto;
     }
     
     .product-card h5 {
-        font-size: 18px;
-    }
-    
-   
-    .product-card a:hover {
-        background-color: #ff3c00bb;
+        font-size: 16px;
     }
     
     footer {
-        background-color: #ffffff;
-        color: rgb(0, 0, 0);
-        text-align: center;
         padding: 10px 0 50px 0;
         margin-top: 20px;
     }
@@ -252,26 +202,16 @@ footer .social-icons a {
         display: flex;
         justify-content: center;
         gap: 20px;
-        
-    
     }
     
     .social-icon {
-        width: 50px; /* Altere o tamanho conforme necessário */
+        width: 50px;
         height: 50px;
         margin-top: 20px;
-        
     }
     
     footer .social-icons a {
         text-decoration: none;
         font-weight: bolder;
-        
-        
     }
-
-
 }
-
-
-
